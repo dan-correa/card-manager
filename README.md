@@ -11,6 +11,7 @@
 
 
 #RUNING INSTRUCTIONS
+* ./gradlew startPostgres
 * ./gradlew bootrun
 ##Sonar
 *./gradlew clean sonar

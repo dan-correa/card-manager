@@ -1,0 +1,16 @@
+flyway :
+  locations: classpath:/db/migration
+  database-name: postgres
+  flyway: true
+
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5431/card-manager-db'
+    username: 'card-manager-adm'
+    password: 'card-manager-password'
+    driver-class-name: 'org.postgresql.Driver'
+  jpa:
+    properties:
+      hibernate:
+        dialect: 'org.hibernate.dialect.PostgreSQLDialect'
+        ddl-auto: create

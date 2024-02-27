@@ -80,7 +80,7 @@ tasks.register<Exec>("startPostgres") {
 
     }
 
-    val cmd = "docker run --name card-manager-db -p 5432:5433 -e POSTGRES_USER=card-manager-adm -e " +
+    val cmd = "docker run --name card-manager-db -p 5431:5432 -e POSTGRES_USER=card-manager-adm -e " +
             "POSTGRES_PASSWORD=card-manager-password -e POSTGRES_DB=card-manager-db -d postgres:16.1"
 
     if (!containerExists()) {
